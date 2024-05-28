@@ -23,7 +23,7 @@ jobs:
           include-prerelease: true
 
       - name: Install EF Tools
-        run: dotnet tool install --global dotnet-ef
+        run: dotnet tool install --global dotnet-ef --version 6.0.6
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
